@@ -32,6 +32,29 @@ def list_people(library)
   puts library.list_people
 end
 
+def lend_book(library)
+  puts "Here is a list of the books in the library..."
+  puts library.list_books
+  puts
+  print "Enter the book name to be borrowed (by name): "
+  book_title = gets.chomp
+  puts
+  puts "Here is a list of the people registered with the library..."
+  puts library.list_people
+  print "Enter who the book is being borrowed by (by name): "
+  person_name = gets.chomp
+
+  library.lend(book_title, person_name)
+end
+
+def return_book(library)
+
+end
+
+def list_borrowed_books(library)
+
+end
+
 def menu
   puts `clear`
   puts "*** Hard Copy Rental - Narnia Books CORAL ***"

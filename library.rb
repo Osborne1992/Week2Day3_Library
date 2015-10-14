@@ -32,10 +32,14 @@ class Library
     end
   end
 
-  def lend_book
+  def lend(book_title, person_name)
+    book = books.delete(book_title)
+    person = people[person_name]
+
+    person.borrow(book)
   end
 
-  def return_book
+  def return
   end
 
   def list_borrowed_books

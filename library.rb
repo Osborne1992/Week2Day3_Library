@@ -46,7 +46,6 @@ class Library
   end
 
   def borrow(book_title, person_name)
-
     book = books.delete(book_title)
     person = people[person_name]
 

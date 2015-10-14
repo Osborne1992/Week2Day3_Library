@@ -7,6 +7,10 @@ class Person
     @books = {}
   end
 
+  def borrow(book)
+    books[book.title] = book
+  end
+
   def pretty_string
     if books.size == 1
     "#{name} has #{books.size} book borrowed from the library."

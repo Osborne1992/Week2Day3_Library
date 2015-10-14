@@ -17,7 +17,7 @@ end
 def create_person(library)
   puts "your name enter Please"
   print "Name: "
-  name = gets.chomp
+  name = gets.chomp.downcase
 
   person = Person.new(name: name)
 
@@ -37,12 +37,12 @@ def lend_book(library)
   puts library.list_books
   puts
   print "Enter the book name to be borrowed (by name): "
-  book_title = gets.chomp
+  book_title = gets.chomp.downcase
   puts
   puts "Here is a list of the people registered with the library..."
   puts library.list_people
   print "Enter who the book is being borrowed by (by name): "
-  person_name = gets.chomp
+  person_name = gets.chomp.downcase
 
   library.lend(book_title, person_name)
 end

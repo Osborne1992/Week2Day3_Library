@@ -54,7 +54,4 @@ class Library
     add_book(book)
   end
 
-  def list_borrowed_books
-  end
-
 end

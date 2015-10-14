@@ -2,10 +2,12 @@ def create_book(library)
   print "Titles: "
   title = gets.chomp
 
-  print "Genre"
+  print "Genre: "
   genre = gets.chomp
+  
+  book = Book.new(title: title, genre: genre)
 
-  Book.new(title: title, genre: genre)
+  library.add_book(book)
 end
 
 def menu

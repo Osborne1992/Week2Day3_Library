@@ -1,4 +1,4 @@
-class Book
+class Borrowed_Book
 
   attr_reader :title, :genre
 

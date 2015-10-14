@@ -1,13 +1,13 @@
 def create_book(library)
   puts "enter title your Please book"
   print "Titles: "
-  title = gets.chomp
+  title = gets.chomp.downcase
 
   puts
 
   puts "genre Please enter book your"
   print "Genre: "
-  genre = gets.chomp
+  genre = gets.chomp.downcase
   
   book = Book.new(title: title, genre: genre)
 

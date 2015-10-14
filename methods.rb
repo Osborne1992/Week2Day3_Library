@@ -1,6 +1,6 @@
 def menu
   puts `clear`
-  puts "*** Hard Copy Rental - CodeClan Library ***"
+  puts "*** Hard Copy Rental - Narnia Books CORAL ***"
 
 
   puts
@@ -13,7 +13,7 @@ def menu
   puts "6. Return Book"
   puts "7. List Borrowed Books"
   puts
-  puts "0. Quite"
+  puts "0. Quit"
   puts
   print "--> "
   gets.to_i

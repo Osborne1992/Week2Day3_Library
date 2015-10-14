@@ -8,4 +8,40 @@ require_relative 'methods'
 
 
 
+library = Library.new name: "Narnia Books CORAL"
+
+response = menu
+
+until response == 0
+
+  case response
+  when 1 
+    create_book(library)
+  when 2
+    create_person
+  when 3
+    list_all_books
+  when 4
+    list_all_people
+  when 5
+    lend_book
+  when 6
+    return_book
+  when 7
+    list_borrowed_books
+  else
+    puts "Invalid Input"
+  end
+
+  puts "Press enter to continue"
+  gets
+
+  response = menu
+
+end
+
+
+
+
+
 binding.pry;''

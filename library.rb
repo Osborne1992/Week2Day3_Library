@@ -18,7 +18,7 @@ class Library
   end
 
   def add_borrowed_book(borrowed_book)
-    borrowed_books[book.title] = borrowed_book
+    borrowed_books[book] = borrowed_book
   end
 
   def list_books

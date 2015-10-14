@@ -28,6 +28,10 @@ def list_books(library)
   puts library.list_books
 end
 
+def list_people(library)
+  puts library.list_people
+end
+
 def menu
   puts `clear`
   puts "*** Hard Copy Rental - Narnia Books CORAL ***"

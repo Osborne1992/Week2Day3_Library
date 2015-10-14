@@ -22,7 +22,7 @@ until response == 0
   when 3
     list_books(library)
   when 4
-    list_all_people(library)
+    list_people(library)
   when 5
     lend_book(library)
   when 6

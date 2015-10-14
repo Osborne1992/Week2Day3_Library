@@ -20,7 +20,15 @@ class Library
     if books.empty?
       "We are that one library which has no books... Sorry!"
     else
-      books.map { |key, book| book.pretty_string}.join("\n")
+      books.map { |key, book| book.pretty_string }.join("\n")
+    end
+  end
+
+  def list_people
+    if people.empty?
+      "We have no one registered with this library."
+    else
+      people.map { |key, person| person.pretty_string }.join("\n")
     end
   end
 

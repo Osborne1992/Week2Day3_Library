@@ -10,15 +10,15 @@ require_relative 'methods'
 
 library = Library.new name: "Narnia Books CORAL"
 
-library.add_person(Person.new(name: 'Fred'))
-library.add_person(Person.new(name: 'Wilma'))
-library.add_person(Person.new(name: 'Barney'))
-library.add_person(Person.new(name: 'Betty'))
-library.add_book(Book.new(title: "The Hobbit", genre: "Fantasy"))
-library.add_book(Book.new(title: "Feersum Endjinn", genre: "Science Fiction"))
-library.add_book(Book.new(title: "Histories", genre: "History"))
-library.add_book(Book.new(title: "To Kill a Mockingbird", genre: "Fiction"))
-library.add_book(Book.new(title: "A Brief History of Time", genre: "Non-Fiction"))
+library.add_person(Person.new(name: 'fred'))
+library.add_person(Person.new(name: 'wilma'))
+library.add_person(Person.new(name: 'barney'))
+library.add_person(Person.new(name: 'betty'))
+library.add_book(Book.new(title: "the hobbit", genre: "Fantasy"))
+library.add_book(Book.new(title: "feersum endjinn", genre: "Science Fiction"))
+library.add_book(Book.new(title: "histories", genre: "History"))
+library.add_book(Book.new(title: "to kill a mockingbird", genre: "Fiction"))
+library.add_book(Book.new(title: "a brief history of time", genre: "Non-Fiction"))
 
 response = menu
 
@@ -34,7 +34,7 @@ until response == 0
   when 4
     list_people(library)
   when 5
-    lend_book(library)
+    borrow_book(library)
   when 6
     return_book(library)
   when 7

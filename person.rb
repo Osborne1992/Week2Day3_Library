@@ -11,6 +11,10 @@ class Person
     books[book.title] = book
   end
 
+  def return(title)
+    books.delete(title)
+  end
+
   def pretty_string
     if books.size == 1
     "#{name} has #{books.size} book borrowed from the library."

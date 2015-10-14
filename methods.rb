@@ -32,7 +32,7 @@ def list_people(library)
   puts library.list_people
 end
 
-def lend_book(library)
+def borrow_book(library)
   puts "Here is a list of the books in the library..."
   puts library.list_books
   puts
@@ -44,11 +44,20 @@ def lend_book(library)
   print "Enter who the book is being borrowed by (by name): "
   person_name = gets.chomp.downcase
 
-  library.lend(book_title, person_name)
+  library.borrow(book_title, person_name)
 end
 
 def return_book(library)
+  puts "Here is a list of the people registered with the library..."
+  puts library.list_people
+  puts
+  puts "Enter the name of who is returning a book (by name): "
+  person_name = gets.chomp.downcase
+  puts
+  puts "Enter the book that is being returned: "
+  book_title = gets.chomp.downcase
 
+  library.return(person_name, book_title)
 end
 
 def list_borrowed_books(library)

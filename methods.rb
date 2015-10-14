@@ -1,7 +1,11 @@
 def create_book(library)
+  puts "enter title your Please book"
   print "Titles: "
   title = gets.chomp
 
+  puts
+
+  puts "genre Please enter book your"
   print "Genre: "
   genre = gets.chomp
   

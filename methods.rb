@@ -61,7 +61,7 @@ def return_book(library)
 end
 
 def list_borrowed_books(library)
-
+  puts library.list_borrowed_books
 end
 
 def menu

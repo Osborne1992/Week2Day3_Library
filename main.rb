@@ -20,7 +20,7 @@ until response == 0
   when 2
     create_person(library)
   when 3
-    list_all_books(library)
+    list_books(library)
   when 4
     list_all_people(library)
   when 5

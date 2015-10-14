@@ -14,6 +14,10 @@ def create_book(library)
   library.add_book(book)
 end
 
+def list_books(library)
+  puts library.list_books
+end
+
 def menu
   puts `clear`
   puts "*** Hard Copy Rental - Narnia Books CORAL ***"

@@ -12,6 +12,10 @@ class Library
     books[book.title] = book
   end
 
+  def add_person(person)
+    people[person.name] = person
+  end
+
   def list_books
     if books.empty?
       "We are that one library which has no books... Sorry!"

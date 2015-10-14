@@ -14,6 +14,16 @@ def create_book(library)
   library.add_book(book)
 end
 
+def create_person(library)
+  puts "your name enter Please"
+  print "Name: "
+  name = gets.chomp
+
+  person = Person.new(name: name)
+
+  library.add_person(person)
+end
+
 def list_books(library)
   puts library.list_books
 end

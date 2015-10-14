@@ -17,6 +17,10 @@ class Library
     people[person.name] = person
   end
 
+  def add_borrowed_book(borrowed_book)
+    borrowed_books[book.title] = borrowed_book
+  end
+
   def list_books
     if books.empty?
       "We are that one library which has no books... Sorry!"
@@ -42,6 +46,7 @@ class Library
   end
 
   def borrow(book_title, person_name)
+
     book = books.delete(book_title)
     person = people[person_name]
 

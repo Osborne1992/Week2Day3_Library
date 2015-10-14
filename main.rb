@@ -18,17 +18,17 @@ until response == 0
   when 1 
     create_book(library)
   when 2
-    create_person
+    create_person(library)
   when 3
-    list_all_books
+    list_all_books(library)
   when 4
-    list_all_people
+    list_all_people(library)
   when 5
-    lend_book
+    lend_book(library)
   when 6
-    return_book
+    return_book(library)
   when 7
-    list_borrowed_books
+    list_borrowed_books(library)
   else
     puts "Invalid Input"
   end

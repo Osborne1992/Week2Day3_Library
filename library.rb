@@ -18,7 +18,7 @@ class Library
     else
       books.map do |key, book|
         book.title
-      end.join("/n")
+      end.join("\n")
     end
   end
 

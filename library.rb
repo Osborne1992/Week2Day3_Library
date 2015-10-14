@@ -8,4 +8,8 @@ class Library
     @people = {}
   end
 
+  def add_book(book)
+    books[book.title] = book
+  end
+
 end

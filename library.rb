@@ -32,4 +32,13 @@ class Library
     end
   end
 
+  def lend_book
+  end
+
+  def return_book
+  end
+
+  def list_borrowed_books
+  end
+
 end

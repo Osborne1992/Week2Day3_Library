@@ -1,11 +1,12 @@
 class Library
 
-  attr_reader :name, :books, :people
+  attr_reader :name, :books, :people, :borrowed_books
 
   def initialize(options={})
     @name = options[:name]
     @books = {}
     @people = {}
+    @borrowed_books = {}
   end
 
   def add_book(book)
@@ -29,6 +30,14 @@ class Library
       "We have no one registered with this library."
     else
       people.map { |key, person| person.pretty_string }.join("\n")
+    end
+  end
+
+  def list_borrowed_books
+    if borrowed_books.empty?
+      "No books have been borrowed from this library."
+    else
+      borrowed_books.map { |key, borrowed_book| borrowed_book.pretty_string }.join("\n")
     end
   end
 

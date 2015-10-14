@@ -1,3 +1,13 @@
+def create_book(library)
+  print "Titles: "
+  title = gets.chomp
+
+  print "Genre"
+  genre = gets.chomp
+
+  Book.new(title: title, genre: genre)
+end
+
 def menu
   puts `clear`
   puts "*** Hard Copy Rental - Narnia Books CORAL ***"

@@ -17,7 +17,7 @@ class Library
       "We are that one library which has no books... Sorry!"
     else
       books.map do |key, book|
-        book.title
+        book.pretty_string
       end.join("\n")
     end
   end

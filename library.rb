@@ -12,4 +12,14 @@ class Library
     books[book.title] = book
   end
 
+  def list_books
+    if books.empty?
+      "We are that one library which has no books... Sorry!"
+    else
+      books.map do |key, book|
+        book.title
+      end.join("/n")
+    end
+  end
+
 end

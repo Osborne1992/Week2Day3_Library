@@ -49,6 +49,7 @@ end
 
 def return_book(library)
   puts "Here is a list of the people registered with the library..."
+  puts
   puts library.list_people
   puts
   puts "Enter the name of who is returning a book (by name): "

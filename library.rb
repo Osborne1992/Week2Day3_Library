@@ -38,18 +38,14 @@ class Library
   end
 
   def list_borrowed_books
-
-    borrowed = @people.map do |key, value|
+    if borrowed_books.empty?
+      "No books have been borrowed from this library."
+    else
+      borrowed = @people.map do |key, value|
       book = @people[key].books
-    end 
-
-    binding.pry
-
-    # if borrowed_books.empty?
-    #   "No books have been borrowed from this library."
-    # else
-    #   borrowed_books.map { |key, borrowed_book|  }.join("\n")
-    # end
+      end
+    end
+#    binding.pry
   end
 
   def borrow(book_title, person_name)

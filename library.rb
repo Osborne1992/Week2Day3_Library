@@ -17,8 +17,8 @@ class Library
     people[person.name] = person
   end
 
-  def add_borrowed_book(borrowed_book)
-    borrowed_books[book] = borrowed_book
+  def add_borrowed_book(book)
+    borrowed_books[book] = book
   end
 
   def list_books
@@ -38,14 +38,22 @@ class Library
   end
 
   def list_borrowed_books
-    if borrowed_books.empty?
-      "No books have been borrowed from this library."
-    else
-      borrowed_books.map { |key, borrowed_book| borrowed_book.pretty_string }.join("\n")
-    end
+
+    borrowed = @people.map do |key, value|
+      book = @people[key].books
+    end 
+
+    binding.pry
+
+    # if borrowed_books.empty?
+    #   "No books have been borrowed from this library."
+    # else
+    #   borrowed_books.map { |key, borrowed_book|  }.join("\n")
+    # end
   end
 
   def borrow(book_title, person_name)
+    add_borrowed_book(book_title)
     book = books.delete(book_title)
     person = people[person_name]
 
@@ -55,6 +63,7 @@ class Library
   def return(person_name, book_title)
     person = people[person_name]
     book = person.return(book_title)
+#    borrowed_book = borrowed_books.delete(book_title)
     add_book(book)
   end
 

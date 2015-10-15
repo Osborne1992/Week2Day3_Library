@@ -1,14 +1,12 @@
 class Borrowed_Book
 
-  attr_reader :title, :genre
+  attr_reader :book
 
-  def initialize(options={})
-    @title = options[:title]
-    @genre = options[:genre]
+  def initialize(book)
   end
 
   def pretty_string
-    "#{title}, genre of: #{genre}"
+    "#{book} has been borrowed."
   end
 
 end

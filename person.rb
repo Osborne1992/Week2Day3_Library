@@ -15,6 +15,14 @@ class Person
     books.delete(title)
   end
 
+  # def list_books
+  #   if books.empty?
+  #     "No books have been borrowed by this person"
+  #   else
+  #     books.map { |key, book| book.pretty_string }.join("\n")
+  #   end
+  # end
+
   def pretty_string
     if books.size == 1
     "#{name} has #{books.size} book borrowed from the library."

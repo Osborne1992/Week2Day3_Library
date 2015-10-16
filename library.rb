@@ -44,8 +44,9 @@ class Library
       borrowed = @people.map do |key, value|
       book = @people[key].books
       end
+      
     end
-  binding.pry
+  # binding.pry
   end
 
   def borrow(book_title, person_name)
